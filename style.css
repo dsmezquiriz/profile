@@ -17,13 +17,31 @@ h1 {
   color: #F03F48;
 }
 
-
-
-
 h2 {
   font-family: HelveticaNeue-Light;
   font-weight: 300;
   font-size:20px;
+}
+
+h3 {
+  font-family: HelveticaNeue-Light;
+  font-weight: 400;
+  font-size:24px;
+  text-align: center;
+}
+h4 {
+  font-family: HelveticaNeue;
+  font-weight: 300;
+  font-size:25px;
+  text-align: left;
+  padding-top:20px;
+}
+h5 {
+  font-family: HelveticaNeue-Light;
+  font-weight: 300;
+  font-size:15px;
+  text-align: left;
+  margin-top:-20px;
 }
 
 ul{
@@ -38,28 +56,86 @@ li{
    padding:10px;
 
 }
+
+td {
+  background: white;
+  padding:0px 0px;
+  border-radius: 5px;
+}
 .container {
   /* This sets the width */
   width: 1000px;
-  margin: 0 auto; /* This automatically sets left/right margins */
+  margin: 0 auto 80 auto; /* This automatically sets left/right margins */
   align-content: center;
   text-align: center;
 }
 
-.card {
+.movie {
   align-content: center;
   text-align: center;
   padding: 10 20 5 20;
   margin-top: 20px;
-  background: white;
   border-radius: 5px;
+}
+.movie_card {
+  height: 200px;
+  width:auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: left;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);*/
+}
+
+
+.profile_photo {
+  width:200px;
+  border-radius: 150px;
+  padding:5px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.movie_img {
+  width: 200;
+  height: 200;
+  margin: 0 20 0 0;
+  float:left;
+  border-radius: 5px 0px 0px 5px;
+  object-fit: cover;
+}
+
+.movie_description {
+  display:inline-block
+  text-align: left;
+  padding: 0px 10 0 15;
+  margin-top:20px;
+}
+
+.category {
+  margin: 50 10 0 10;
+  text-align: center;
+  border-top: 1px solid black
+
+}
+
+.category-title {
+  margin:-37px auto 0 auto;
+  width:200px;
+  padding:0 20 0 20;
+  text-align: center;
+  background:#EBEBEB;
+}
+
+.social-link {
+  color: black
 }
 
 
 .fa:hover{
 color: #F03F48
 }
+
 
 @media (max-width: 1400px) {
   /* For a screen < 960px, this CSS will be read */
@@ -87,21 +163,4 @@ color: #F03F48
   }
 }
 
-.profile_photo {
-  border-radius: 150px;
-  padding:5px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-}
-
-.movie_img {
-  width: 200;
-  height: 200;
-  margin: 10 10 10 -5;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-.social-link {
-  color: black
-}
 
